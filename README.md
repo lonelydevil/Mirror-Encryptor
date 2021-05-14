@@ -1,18 +1,42 @@
 # Mirror-Encryptor
 <br />
 <br />
+<br />
 Simple Encryptor by generate a .mirror_key file and a .enc file
+<br />
 <br />
 <br />
 
 # What does it do ?
 <br />
 <br />
+<br />
 This program is an encryptor that can seperate file into encrypted part and key part. You can transfer them with two different method and decrypt the original file to make file transfer secure.
+<br />
+<br />
+<br />
+
+# Platform Support
+<br />
+<br />
+<br />
+Direct Support:
+<br />
+<br />
+Linux, Windows, MacOS
+<br />
+<br />
+<br />
+Indirect Support:
+<br />
+<br />
+Android (with a Linux emulator APP called <a href="https://termux.com/">termux</a>)
+<br />
 <br />
 <br />
 
 # How to build ?
+<br />
 <br />
 <br />
 Build with cmake
@@ -185,16 +209,16 @@ DO NOT use it if your file:
 Also, choose you generated key wisely, encrypt command shows the percentage similarity for EACH PART, after that, shows the similarity between two files.
 <br />
 <br />
-DO NOT use the key your encrypted file:
+DO NOT use the key if your encrypted file:
 <br />
 <br />
 1. has similarity more than 5% from the original file.
 <br />
 <br />
-2. the first part and the last part has similarity more than 1%. Because it might leak basic imformation.
+2. the first part and the last part has similarity more than 1%. Because it might leak basic information.
 <br />
 <br />
-3. any of the part has similarity more than 30%. This will makes hacking process easier.
+3. any of the part has similarity more than 30%. This could make hacking process easier.
 <br />
 <br />
 <br />
